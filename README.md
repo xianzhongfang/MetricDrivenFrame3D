@@ -13,7 +13,7 @@ sudo apt install gfortran libalglib-dev libblas-dev libcholmod3 libgomp1 minpack
 
 
 A simple test
-```
+```console
 bash run.sh
 ```
 
@@ -51,7 +51,7 @@ tet-id size s weight
 
 ### Format transformation
 The results are stored with binary, can be transformed into ASCII by
-```
+```console
 ./bin/MetricDrivenFrame3D prog=mat_b2a in_mat=<...> out_mat=<...>
 ```
 also reversed by
