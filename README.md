@@ -1,14 +1,17 @@
-MetricDrivenFrame3D
+# MetricDrivenFrame3D
 
 Executable file of the paper ![Metric-Driven 3D Frame Field Generation](https://doi.org/10.1109/TVCG.2021.3136199)
 
-Author: Xianzhong Fang
-Email: xzfangcs@163.com
+Author: Xianzhong Fang , Email: xzfangcs@163.com
 
-# Compile environment
-Ubuntu 20.04.1 (Linux)
+Compile environment: Ubuntu 20.04.1 (Linux)
 
-# frame field format  (ff3)
+A simple test
+```
+bash run.sh
+```
+
+# Frame field file format  (ff3)
 N is the number of tetrahedra, the frame in each tet is defined as a 3x3 matrix.
 ```
 9 N
@@ -18,7 +21,7 @@ F11 F21 F31 F21 F22 F23 F31 F32 F33
 ...
 ```
 
-# metric format (s3)
+# Metric field file format (s3)
 N is the number of tetrahedra, S=g^{-1/2} in each tet is defined as a 3x3 SPD,
 In order to save space, store each metric with half of SPD.
 ```
@@ -29,7 +32,7 @@ S11 S21 S31 S22 S32 S33
 ...
 ```
 
-# Frame field constraints format (ffc3)
+# Frame field constraints file format (ffc3)
 ```
 number-of-constraints
 tet-id plane v1 v2 v3 weight
