@@ -4,17 +4,17 @@ Executable file of the paper [Metric-Driven 3D Frame Field Generation](https://d
 
 Author: Xianzhong Fang , Email: xzfangcs@163.com
 
-Compilation Environment: Ubuntu 20.04.1 (Linux)
+Compilation Environment: Ubuntu 20.04 (Linux)
 
-Install Third Libraries in Ubuntu 20.04
+Install third libraries in Ubuntu 20.04
 ```console
-sudo apt install gfortran libalglib-dev libblas-dev libcholmod3 libgomp1 minpack-dev petsc-dev
+$ sudo apt install gfortran libalglib-dev libblas-dev libcholmod3 libgomp1 minpack-dev petsc-dev
 ```
 
 
 A simple test
 ```console
-bash run.sh
+$ bash run.sh
 ```
 
 ## File Format
@@ -52,9 +52,9 @@ tet-id size s weight
 ### Format transformation
 The results are stored with binary, can be transformed into ASCII by
 ```console
-./bin/MetricDrivenFrame3D prog=mat_b2a in_mat=<...> out_mat=<...>
+$ ./bin/MetricDrivenFrame3D prog=mat_b2a in_mat=<...> out_mat=<...>
 ```
 also reversed by
 ```console
-./bin/MetricDrivenFrame3D prog=mat_a2b in_mat=<...> out_mat=<...>
+$ ./bin/MetricDrivenFrame3D prog=mat_a2b in_mat=<...> out_mat=<...>
 ```
