@@ -2,7 +2,7 @@
 
 Executable file of the paper [Metric-Driven 3D Frame Field Generation](https://doi.org/10.1109/TVCG.2021.3136199)
 
-Author: Xianzhong Fang , Email: xzfangcs@163.com
+Author: Xianzhong Fang , Email: xzfangcs [at] 163 [dot] com
 
 Compilation Environment: Ubuntu 20.04.1 (Linux)
 
