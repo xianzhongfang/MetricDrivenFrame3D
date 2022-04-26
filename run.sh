@@ -3,6 +3,8 @@
 cd `dirname $0`
 chmod +x ./bin/MetricDrivenFrame3D
 
+# make output directory for results
+mkdir -p ./output
 
 # one case for flat-metric
 make -f test.mk ff_with_metric MESH=kittenhex
